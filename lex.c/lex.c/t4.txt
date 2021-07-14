@@ -1,0 +1,4 @@
+/* invalid identifier */
+
+var fzero, 64mario;
+write -fzero * 64mario. 

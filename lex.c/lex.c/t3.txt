@@ -1,0 +1,17 @@
+/* number too long */
+
+const n = 123456789;
+
+var a, b, c;
+procedure f (d);
+begin
+    var e;
+    read e;
+    return
+end
+
+begin
+    a=987654321;
+    call f(a);
+    write a
+end.

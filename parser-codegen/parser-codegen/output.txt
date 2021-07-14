@@ -1,0 +1,93 @@
+Lexeme Table:
+	lexeme          token type
+	const 		28
+	x 		2
+	= 		9
+	7 		3
+	; 		18
+	var 		29
+	y 		2
+	, 		17
+	z 		2
+	; 		18
+	begin 		21
+	read 		32
+	y 		2
+	; 		18
+	if 		23
+	y 		2
+	> 		13
+	x 		2
+	then 		24
+	z 		2
+	:= 		20
+	y 		2
+	* 		6
+	48 		3
+	; 		18
+	while 		25
+	y 		2
+	> 		13
+	x 		2
+	do 		26
+	y 		2
+	:= 		20
+	y 		2
+	- 		5
+	x 		2
+	; 		18
+	write 		31
+	y 		2
+	; 		18
+	end 		22
+	. 		19
+
+Token List:
+28 2 x 9 3 7 18 29 2 y 17 2 z 18 21 32 2 y 18 23 2 y 13 2 x 24 2 z 20 2 y 6 3 48 18 25 2 y 13 2 x 26 2 y 20 2 y 5 2 x 18 31 2 y 18 22 19 
+
+
+Generated Assembly:
+Line	OP	L	M
+0	INC	0	6	
+1	SYS	0	2	
+2	STO	0	4	
+3	LOD	0	4	
+4	LIT	0	7	
+5	OPR	0	12	
+6	JPC	0	11	
+7	LOD	0	4	
+8	LIT	0	48	
+9	OPR	0	4	
+10	STO	0	5	
+11	LOD	0	4	
+12	LIT	0	7	
+13	OPR	0	12	
+14	JPC	0	20	
+15	LOD	0	4	
+16	LIT	0	7	
+17	OPR	0	3	
+18	STO	0	4	
+19	JMP	0	11	
+20	LOD	0	4	
+21	SYS	0	1	
+22	SYS	0	3	
+
+
+		 PC    BP    SP    stack
+Initial values:  0     0    -1    
+ 0 INC   0  6     1     0     5    0 0 0 0 0 0 
+Please Enter an Integer: 
+ 1 SYS   0  2     2     0     6    0 0 0 0 0 0 7 
+ 2 STO   0  4     3     0     5    0 0 0 0 7 0 
+ 3 LOD   0  4     4     0     6    0 0 0 0 7 0 7 
+ 4 LIT   0  7     5     0     7    0 0 0 0 7 0 7 7 
+ 5 OPR   0 12     6     0     6    0 0 0 0 7 0 0 
+ 6 JPC   0 11    11     0     5    0 0 0 0 7 0 
+11 LOD   0  4    12     0     6    0 0 0 0 7 0 7 
+12 LIT   0  7    13     0     7    0 0 0 0 7 0 7 7 
+13 OPR   0 12    14     0     6    0 0 0 0 7 0 0 
+14 JPC   0 20    20     0     5    0 0 0 0 7 0 
+20 LOD   0  4    21     0     6    0 0 0 0 7 0 7 
+Top of Stack Value: 7
+21 SYS   0  1    22     0     5    0 0 0 0 7 0 
+22 SYS   0  3    23     0     5    0 0 0 0 7 0 

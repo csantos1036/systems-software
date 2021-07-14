@@ -1,0 +1,19 @@
+/* no error */
+
+var f, n;
+procedure factorial;
+var ans;
+begin
+    ans:=n;
+    n := n- 1;
+    if n = 0 then f := 1;
+    if n > 0 then call factorial;
+    f:=f*ans;
+    return f;
+end
+
+begin
+n:=420 % 69;
+call factorial;
+write f;
+end.

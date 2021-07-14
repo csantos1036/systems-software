@@ -1,0 +1,10 @@
+Lexeme Table:
+	lexeme   token type
+	write 		31
+Error : Invalid Symbol
+	potato 		2
+Error : Invalid Symbol
+	. 		19
+
+Token List:
+31   2 potato  19   

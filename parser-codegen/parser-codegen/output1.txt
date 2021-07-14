@@ -1,0 +1,39 @@
+Lexeme Table:
+lexeme          token type
+        var     29
+          x     2
+          ,     17
+          y     2
+          ;     18
+      begin     21
+          x     2
+         :=     20
+          y     2
+          *     6
+          2     3
+          ;     18
+        end     22
+          .     19
+
+Token List:
+29 2 x 17 2 y 18 21 2 x 20 2 y 6 3 2 18 22 19 
+
+
+Generated Assembly:
+Line    OP    L    M
+  0    INC    0    6
+  1    LOD    0    5
+  2    LIT    0    2
+  3    OPR    0    4
+  4    STO    0    4
+  5    SYS    0    3
+
+
+                PC   BP   SP   stack
+Initial values: 0    0    -1   
+ 0 INC  0  6     1    0    5   0 0 0 0 0 0
+ 1 LOD  0  5     2    0    6   0 0 0 0 0 0 0
+ 2 LIT  0  2     3    0    7   0 0 0 0 0 0 0 2
+ 3 OPR  0  4     4    0    6   0 0 0 0 0 0 0
+ 4 STO  0  4     5    0    5   0 0 0 0 0 0
+ 5 SYS  0  3     6    0    5   0 0 0 0 0 0

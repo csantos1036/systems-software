@@ -1,0 +1,10 @@
+const x = 7;
+var y, z;
+begin
+	read y;
+	if y > x then
+		z := y * 48;
+	while y > x do
+		y := y - x;
+	write y;
+end.

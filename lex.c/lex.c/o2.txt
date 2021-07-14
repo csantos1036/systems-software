@@ -1,0 +1,18 @@
+Lexeme Table:
+lexeme                           token type
+const                            28
+myconstant                       2
+=                                9
+314                              3
+;                                18
+var                              29
+Error : Identifier names cannot exceed 11 characters
+,                                17
+n                                2
+;                                18
+write                            31
+myconstant                       2
+.                                19
+
+Token List:
+28 2 myconstant 9 3 314 18 29 17 2 n 18 31 2 myconstant 19 

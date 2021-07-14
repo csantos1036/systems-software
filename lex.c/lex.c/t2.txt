@@ -1,0 +1,5 @@
+/* identifier too long. */ 
+
+const myconstant = 314; 
+var mynameistoolong, n;
+write myconstant.
